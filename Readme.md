@@ -4,7 +4,7 @@ So, I made and app to make short cringy animations, it works like this:
 1. You can define a series with a context and a list of characters
 2. You can define episodes with a plot and a script
 3. The script is written in a language called [FunnyScript](Sources/Docs/funnyscripy_docs.md), which I developed
-4. The LLM of your choice can help you convert a plot into FunnyScripy, or write it for you
+4. The LLM of your choice can help you convert a plot into FunnyScript, or write it for you
 5. Dubs are generated via ElevenLabs (or raw macOS)
 6. The script is "compiled", that is, each instruction in it is assigned a start time and a duration (taking into account audio duration for each line of dialog)
 7. Entities are moved around following the instructions
