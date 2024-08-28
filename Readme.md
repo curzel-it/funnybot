@@ -5,8 +5,8 @@ So, I made and app to make short cringy animations, it works like this:
 2. You can define episodes with a plot and a script
 3. The script is written in a language called [FunnyScript](Sources/Docs/funnyscripy_docs.md), which I developed
 4. The LLM of your choice can help you convert a plot into FunnyScript, or write it for you
-5. Dubs are generated via ElevenLabs (or raw macOS)
-6. The script is "compiled", that is, each instruction in it is assigned a start time and a duration (taking into account audio duration for each line of dialog)
+5. Audio for dialogs is generated via ElevenLabs (or macOS voice synthesizer)
+6. The script is "compiled", that is, each instruction in it is assigned a start time and a duration (taking into account audio duration for each line of dialog, sounds effects, animations, ...)
 7. Entities are moved around following the instructions
 8. An image is taked for each frame
 9. Images are stitched togeter into a video
@@ -19,10 +19,13 @@ I have other videson on [my YouTube channel](https://www.youtube.com/@HiddenMugs
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q4dWr85J4hA?si=nLaqTsjOZidvHcdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Does it work? Can I use it?
-I mean, there's better tools out there, but go ahead... If you really want to try it out I won't stop you 😂
+## Why? 
+Idk.
 
-The file [funnybot.json](funnybot.json) can be imported directly in the app and include the "source" for most of the videos on my YouTube channel, the repo also includes the same assets I use.
+## Does it work? Can I use it?
+I mean, there's far, FAR better tools out there, but go ahead... If you really want to try it out I won't stop you 😂
+
+The file [funnybot.json](funnybot.json) can be imported directly in the app and include the "source" for most of my videos, the repo also includes the same assets I use.
 
 ## Screenshots
 Homepage, showing the list of your series and general settings

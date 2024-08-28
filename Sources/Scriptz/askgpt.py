@@ -6,7 +6,7 @@ import openai
 GPT35_16 = "gpt-3.5-turbo-16k"
 GPT35 = "gpt-3.5-turbo"
 GPT4 = "gpt-4"
-openai.api_key = "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"
+openai.api_key = "..."
 
 
 def list_models():
