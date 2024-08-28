@@ -13,11 +13,9 @@ So, I made and app to make short cringy animations, it works like this:
 10. Audio is added in
 
 ## What does it look like?
-[Here's a demo](https://youtu.be/Q4dWr85J4hA?si=3acBM4IhfJ2b12bL)
+[![Here's the channel trailer](screenshots/channel-trailer.webp)](https://youtu.be/I9TS46Z1wM4)
 
-I have other videson on [my YouTube channel](https://www.youtube.com/@HiddenMugs)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q4dWr85J4hA?si=nLaqTsjOZidvHcdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+I have other videos on [my YouTube channel](https://www.youtube.com/@HiddenMugs)
 
 ## Why? 
 Idk.
