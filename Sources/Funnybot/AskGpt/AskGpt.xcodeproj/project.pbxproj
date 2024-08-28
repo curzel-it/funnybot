@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		648FDFEF2B59AF2E00801009 /* MistralChatCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FDFEE2B59AF2E00801009 /* MistralChatCompletion.swift */; };
+		64BF683A2B36575700B11F1F /* AskGpt.h in Headers */ = {isa = PBXBuildFile; fileRef = 64BF68392B36575700B11F1F /* AskGpt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64BF68462B36576800B11F1F /* AskGpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF68402B36576800B11F1F /* AskGpt.swift */; };
+		64BF68472B36576800B11F1F /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF68412B36576800B11F1F /* ChatMessage.swift */; };
+		64BF68482B36576800B11F1F /* ChatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF68422B36576800B11F1F /* ChatApi.swift */; };
+		64BF68492B36576800B11F1F /* ChatRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF68432B36576800B11F1F /* ChatRole.swift */; };
+		64BF684A2B36576800B11F1F /* OpenAiChatCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF68442B36576800B11F1F /* OpenAiChatCompletion.swift */; };
+		64BF684B2B36576800B11F1F /* OpenRouterChatCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF68452B36576800B11F1F /* OpenRouterChatCompletion.swift */; };
+		64BF68532B3657F600B11F1F /* BareBones in Frameworks */ = {isa = PBXBuildFile; productRef = 64BF68522B3657F600B11F1F /* BareBones */; };
+		64BF68562B3657FC00B11F1F /* Schwifty in Frameworks */ = {isa = PBXBuildFile; productRef = 64BF68552B3657FC00B11F1F /* Schwifty */; };
+		64BF68582B36587700B11F1F /* AskGptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF68572B36587700B11F1F /* AskGptModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		648FDFEE2B59AF2E00801009 /* MistralChatCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistralChatCompletion.swift; sourceTree = "<group>"; };
+		64BF68362B36575700B11F1F /* AskGpt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AskGpt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BF68392B36575700B11F1F /* AskGpt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AskGpt.h; sourceTree = "<group>"; };
+		64BF68402B36576800B11F1F /* AskGpt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskGpt.swift; sourceTree = "<group>"; };
+		64BF68412B36576800B11F1F /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		64BF68422B36576800B11F1F /* ChatApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatApi.swift; sourceTree = "<group>"; };
+		64BF68432B36576800B11F1F /* ChatRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRole.swift; sourceTree = "<group>"; };
+		64BF68442B36576800B11F1F /* OpenAiChatCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAiChatCompletion.swift; sourceTree = "<group>"; };
+		64BF68452B36576800B11F1F /* OpenRouterChatCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenRouterChatCompletion.swift; sourceTree = "<group>"; };
+		64BF68572B36587700B11F1F /* AskGptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskGptModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64BF68332B36575700B11F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BF68532B3657F600B11F1F /* BareBones in Frameworks */,
+				64BF68562B3657FC00B11F1F /* Schwifty in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64BF682C2B36575700B11F1F = {
+			isa = PBXGroup;
+			children = (
+				64BF68382B36575700B11F1F /* AskGpt */,
+				64BF68372B36575700B11F1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64BF68372B36575700B11F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BF68362B36575700B11F1F /* AskGpt.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BF68382B36575700B11F1F /* AskGpt */ = {
+			isa = PBXGroup;
+			children = (
+				64BF68392B36575700B11F1F /* AskGpt.h */,
+				64BF68402B36576800B11F1F /* AskGpt.swift */,
+				64BF68572B36587700B11F1F /* AskGptModel.swift */,
+				64BF68422B36576800B11F1F /* ChatApi.swift */,
+				64BF68412B36576800B11F1F /* ChatMessage.swift */,
+				64BF68432B36576800B11F1F /* ChatRole.swift */,
+				64BF68442B36576800B11F1F /* OpenAiChatCompletion.swift */,
+				64BF68452B36576800B11F1F /* OpenRouterChatCompletion.swift */,
+				648FDFEE2B59AF2E00801009 /* MistralChatCompletion.swift */,
+			);
+			path = AskGpt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		64BF68312B36575700B11F1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BF683A2B36575700B11F1F /* AskGpt.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		64BF68352B36575700B11F1F /* AskGpt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BF683D2B36575700B11F1F /* Build configuration list for PBXNativeTarget "AskGpt" */;
+			buildPhases = (
+				64BF68312B36575700B11F1F /* Headers */,
+				64BF68322B36575700B11F1F /* Sources */,
+				64BF68332B36575700B11F1F /* Frameworks */,
+				64BF68342B36575700B11F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AskGpt;
+			packageProductDependencies = (
+				64BF68522B3657F600B11F1F /* BareBones */,
+				64BF68552B3657FC00B11F1F /* Schwifty */,
+			);
+			productName = AskGpt;
+			productReference = 64BF68362B36575700B11F1F /* AskGpt.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64BF682D2B36575700B11F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					64BF68352B36575700B11F1F = {
+						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
+					};
+				};
+			};
+			buildConfigurationList = 64BF68302B36575700B11F1F /* Build configuration list for PBXProject "AskGpt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64BF682C2B36575700B11F1F;
+			packageReferences = (
+				64BF68512B3657F600B11F1F /* XCRemoteSwiftPackageReference "barebones" */,
+				64BF68542B3657FC00B11F1F /* XCRemoteSwiftPackageReference "Schwifty" */,
+			);
+			productRefGroup = 64BF68372B36575700B11F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64BF68352B36575700B11F1F /* AskGpt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64BF68342B36575700B11F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64BF68322B36575700B11F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BF684A2B36576800B11F1F /* OpenAiChatCompletion.swift in Sources */,
+				64BF68462B36576800B11F1F /* AskGpt.swift in Sources */,
+				64BF68582B36587700B11F1F /* AskGptModel.swift in Sources */,
+				64BF684B2B36576800B11F1F /* OpenRouterChatCompletion.swift in Sources */,
+				648FDFEF2B59AF2E00801009 /* MistralChatCompletion.swift in Sources */,
+				64BF68482B36576800B11F1F /* ChatApi.swift in Sources */,
+				64BF68472B36576800B11F1F /* ChatMessage.swift in Sources */,
+				64BF68492B36576800B11F1F /* ChatRole.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		64BF683B2B36575700B11F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64BF683C2B36575700B11F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64BF683E2B36575700B11F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 993X4A8QP7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.AskGpt;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64BF683F2B36575700B11F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 993X4A8QP7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.AskGpt;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64BF68302B36575700B11F1F /* Build configuration list for PBXProject "AskGpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BF683B2B36575700B11F1F /* Debug */,
+				64BF683C2B36575700B11F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64BF683D2B36575700B11F1F /* Build configuration list for PBXNativeTarget "AskGpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BF683E2B36575700B11F1F /* Debug */,
+				64BF683F2B36575700B11F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64BF68512B3657F600B11F1F /* XCRemoteSwiftPackageReference "barebones" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/curzel-it/barebones";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		64BF68542B3657FC00B11F1F /* XCRemoteSwiftPackageReference "Schwifty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/curzel-it/Schwifty";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64BF68522B3657F600B11F1F /* BareBones */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64BF68512B3657F600B11F1F /* XCRemoteSwiftPackageReference "barebones" */;
+			productName = BareBones;
+		};
+		64BF68552B3657FC00B11F1F /* Schwifty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64BF68542B3657FC00B11F1F /* XCRemoteSwiftPackageReference "Schwifty" */;
+			productName = Schwifty;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 64BF682D2B36575700B11F1F /* Project object */;
+}

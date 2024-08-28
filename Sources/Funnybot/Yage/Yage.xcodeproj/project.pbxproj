@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		640C10AB2B42C5DF00591761 /* Yage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640C10A22B42C5DE00591761 /* Yage.framework */; };
+		640C10B02B42C5DF00591761 /* YageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10AF2B42C5DF00591761 /* YageTests.swift */; };
+		640C10B12B42C5DF00591761 /* Yage.h in Headers */ = {isa = PBXBuildFile; fileRef = 640C10A52B42C5DE00591761 /* Yage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		640C10DA2B42C5FA00591761 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10CB2B42C5FA00591761 /* Directions.swift */; };
+		640C10DB2B42C5FA00591761 /* EntityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10CC2B42C5FA00591761 /* EntityState.swift */; };
+		640C10DC2B42C5FA00591761 /* Capability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10CD2B42C5FA00591761 /* Capability.swift */; };
+		640C10DD2B42C5FA00591761 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10CE2B42C5FA00591761 /* Entity.swift */; };
+		640C10DE2B42C5FA00591761 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10CF2B42C5FA00591761 /* Animations.swift */; };
+		640C10DF2B42C5FA00591761 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D02B42C5FA00591761 /* Species.swift */; };
+		640C10E02B42C5FA00591761 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D12B42C5FA00591761 /* World.swift */; };
+		640C10E12B42C5FA00591761 /* SpritesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D32B42C5FA00591761 /* SpritesProvider.swift */; };
+		640C10E22B42C5FA00591761 /* AnimationsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D42B42C5FA00591761 /* AnimationsProvider.swift */; };
+		640C10E32B42C5FA00591761 /* LinearMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D52B42C5FA00591761 /* LinearMovement.swift */; };
+		640C10E42B42C5FA00591761 /* Rotating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D62B42C5FA00591761 /* Rotating.swift */; };
+		640C10E52B42C5FA00591761 /* AnimatedSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D72B42C5FA00591761 /* AnimatedSprite.swift */; };
+		640C10E62B42C5FA00591761 /* Seeker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D82B42C5FA00591761 /* Seeker.swift */; };
+		640C10E72B42C5FA00591761 /* FlipHorizontallyWhenGoingLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10D92B42C5FA00591761 /* FlipHorizontallyWhenGoingLeft.swift */; };
+		640C10EA2B42C63800591761 /* Schwifty in Frameworks */ = {isa = PBXBuildFile; productRef = 640C10E92B42C63800591761 /* Schwifty */; };
+		640C10ED2B42C63E00591761 /* NotAGif in Frameworks */ = {isa = PBXBuildFile; productRef = 640C10EC2B42C63E00591761 /* NotAGif */; };
+		640C10EF2B42C69500591761 /* CapabilitiesDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10EE2B42C69500591761 /* CapabilitiesDiscovery.swift */; };
+		640C10F12B42C8B000591761 /* OpacityTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10F02B42C8B000591761 /* OpacityTransitioner.swift */; };
+		640C10F42B42C8DB00591761 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C10F32B42C8DB00591761 /* Config.swift */; };
+		649AD8042B628F690064C3A3 /* TalkingCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649AD8032B628F690064C3A3 /* TalkingCharacter.swift */; };
+		64F5EFA62B5DA8A1009ED806 /* OverlayCapability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5EFA52B5DA8A1009ED806 /* OverlayCapability.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		640C10AC2B42C5DF00591761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 640C10992B42C5DE00591761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 640C10A12B42C5DE00591761;
+			remoteInfo = Yage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		640C10A22B42C5DE00591761 /* Yage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640C10A52B42C5DE00591761 /* Yage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Yage.h; sourceTree = "<group>"; };
+		640C10AA2B42C5DF00591761 /* YageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		640C10AF2B42C5DF00591761 /* YageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YageTests.swift; sourceTree = "<group>"; };
+		640C10CB2B42C5FA00591761 /* Directions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
+		640C10CC2B42C5FA00591761 /* EntityState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityState.swift; sourceTree = "<group>"; };
+		640C10CD2B42C5FA00591761 /* Capability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capability.swift; sourceTree = "<group>"; };
+		640C10CE2B42C5FA00591761 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		640C10CF2B42C5FA00591761 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		640C10D02B42C5FA00591761 /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		640C10D12B42C5FA00591761 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		640C10D32B42C5FA00591761 /* SpritesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritesProvider.swift; sourceTree = "<group>"; };
+		640C10D42B42C5FA00591761 /* AnimationsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsProvider.swift; sourceTree = "<group>"; };
+		640C10D52B42C5FA00591761 /* LinearMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearMovement.swift; sourceTree = "<group>"; };
+		640C10D62B42C5FA00591761 /* Rotating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotating.swift; sourceTree = "<group>"; };
+		640C10D72B42C5FA00591761 /* AnimatedSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSprite.swift; sourceTree = "<group>"; };
+		640C10D82B42C5FA00591761 /* Seeker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seeker.swift; sourceTree = "<group>"; };
+		640C10D92B42C5FA00591761 /* FlipHorizontallyWhenGoingLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipHorizontallyWhenGoingLeft.swift; sourceTree = "<group>"; };
+		640C10EE2B42C69500591761 /* CapabilitiesDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapabilitiesDiscovery.swift; sourceTree = "<group>"; };
+		640C10F02B42C8B000591761 /* OpacityTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityTransitioner.swift; sourceTree = "<group>"; };
+		640C10F32B42C8DB00591761 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		649AD8032B628F690064C3A3 /* TalkingCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingCharacter.swift; sourceTree = "<group>"; };
+		64F5EFA52B5DA8A1009ED806 /* OverlayCapability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayCapability.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		640C109F2B42C5DE00591761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640C10EA2B42C63800591761 /* Schwifty in Frameworks */,
+				640C10ED2B42C63E00591761 /* NotAGif in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640C10A72B42C5DF00591761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640C10AB2B42C5DF00591761 /* Yage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		640C10982B42C5DE00591761 = {
+			isa = PBXGroup;
+			children = (
+				640C10A42B42C5DE00591761 /* Yage */,
+				640C10AE2B42C5DF00591761 /* YageTests */,
+				640C10A32B42C5DE00591761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		640C10A32B42C5DE00591761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				640C10A22B42C5DE00591761 /* Yage.framework */,
+				640C10AA2B42C5DF00591761 /* YageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		640C10A42B42C5DE00591761 /* Yage */ = {
+			isa = PBXGroup;
+			children = (
+				640C10F22B42C8D200591761 /* Config */,
+				640C10D22B42C5FA00591761 /* Capabilities */,
+				640C10CA2B42C5FA00591761 /* Models */,
+				640C10A52B42C5DE00591761 /* Yage.h */,
+			);
+			path = Yage;
+			sourceTree = "<group>";
+		};
+		640C10AE2B42C5DF00591761 /* YageTests */ = {
+			isa = PBXGroup;
+			children = (
+				640C10AF2B42C5DF00591761 /* YageTests.swift */,
+			);
+			path = YageTests;
+			sourceTree = "<group>";
+		};
+		640C10CA2B42C5FA00591761 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				640C10CF2B42C5FA00591761 /* Animations.swift */,
+				640C10CD2B42C5FA00591761 /* Capability.swift */,
+				640C10CB2B42C5FA00591761 /* Directions.swift */,
+				640C10CE2B42C5FA00591761 /* Entity.swift */,
+				640C10CC2B42C5FA00591761 /* EntityState.swift */,
+				640C10D02B42C5FA00591761 /* Species.swift */,
+				640C10D12B42C5FA00591761 /* World.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		640C10D22B42C5FA00591761 /* Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+				640C10D72B42C5FA00591761 /* AnimatedSprite.swift */,
+				640C10D42B42C5FA00591761 /* AnimationsProvider.swift */,
+				640C10D92B42C5FA00591761 /* FlipHorizontallyWhenGoingLeft.swift */,
+				640C10D52B42C5FA00591761 /* LinearMovement.swift */,
+				640C10F02B42C8B000591761 /* OpacityTransitioner.swift */,
+				64F5EFA52B5DA8A1009ED806 /* OverlayCapability.swift */,
+				640C10D62B42C5FA00591761 /* Rotating.swift */,
+				640C10D82B42C5FA00591761 /* Seeker.swift */,
+				640C10D32B42C5FA00591761 /* SpritesProvider.swift */,
+				649AD8032B628F690064C3A3 /* TalkingCharacter.swift */,
+			);
+			path = Capabilities;
+			sourceTree = "<group>";
+		};
+		640C10F22B42C8D200591761 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				640C10EE2B42C69500591761 /* CapabilitiesDiscovery.swift */,
+				640C10F32B42C8DB00591761 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		640C109D2B42C5DE00591761 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640C10B12B42C5DF00591761 /* Yage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		640C10A12B42C5DE00591761 /* Yage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640C10B42B42C5DF00591761 /* Build configuration list for PBXNativeTarget "Yage" */;
+			buildPhases = (
+				640C109D2B42C5DE00591761 /* Headers */,
+				640C109E2B42C5DE00591761 /* Sources */,
+				640C109F2B42C5DE00591761 /* Frameworks */,
+				640C10A02B42C5DE00591761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yage;
+			packageProductDependencies = (
+				640C10E92B42C63800591761 /* Schwifty */,
+				640C10EC2B42C63E00591761 /* NotAGif */,
+			);
+			productName = Yage;
+			productReference = 640C10A22B42C5DE00591761 /* Yage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		640C10A92B42C5DF00591761 /* YageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640C10B72B42C5DF00591761 /* Build configuration list for PBXNativeTarget "YageTests" */;
+			buildPhases = (
+				640C10A62B42C5DF00591761 /* Sources */,
+				640C10A72B42C5DF00591761 /* Frameworks */,
+				640C10A82B42C5DF00591761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				640C10AD2B42C5DF00591761 /* PBXTargetDependency */,
+			);
+			name = YageTests;
+			productName = YageTests;
+			productReference = 640C10AA2B42C5DF00591761 /* YageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		640C10992B42C5DE00591761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					640C10A12B42C5DE00591761 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					640C10A92B42C5DF00591761 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 640C109C2B42C5DE00591761 /* Build configuration list for PBXProject "Yage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 640C10982B42C5DE00591761;
+			packageReferences = (
+				640C10E82B42C63800591761 /* XCRemoteSwiftPackageReference "Schwifty" */,
+				640C10EB2B42C63E00591761 /* XCRemoteSwiftPackageReference "NotAGif" */,
+			);
+			productRefGroup = 640C10A32B42C5DE00591761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				640C10A12B42C5DE00591761 /* Yage */,
+				640C10A92B42C5DF00591761 /* YageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		640C10A02B42C5DE00591761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640C10A82B42C5DF00591761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		640C109E2B42C5DE00591761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640C10DD2B42C5FA00591761 /* Entity.swift in Sources */,
+				640C10DE2B42C5FA00591761 /* Animations.swift in Sources */,
+				64F5EFA62B5DA8A1009ED806 /* OverlayCapability.swift in Sources */,
+				640C10DB2B42C5FA00591761 /* EntityState.swift in Sources */,
+				640C10EF2B42C69500591761 /* CapabilitiesDiscovery.swift in Sources */,
+				640C10F42B42C8DB00591761 /* Config.swift in Sources */,
+				640C10E72B42C5FA00591761 /* FlipHorizontallyWhenGoingLeft.swift in Sources */,
+				640C10DA2B42C5FA00591761 /* Directions.swift in Sources */,
+				640C10E22B42C5FA00591761 /* AnimationsProvider.swift in Sources */,
+				640C10DF2B42C5FA00591761 /* Species.swift in Sources */,
+				640C10E12B42C5FA00591761 /* SpritesProvider.swift in Sources */,
+				640C10E02B42C5FA00591761 /* World.swift in Sources */,
+				640C10DC2B42C5FA00591761 /* Capability.swift in Sources */,
+				640C10E52B42C5FA00591761 /* AnimatedSprite.swift in Sources */,
+				640C10E42B42C5FA00591761 /* Rotating.swift in Sources */,
+				640C10E32B42C5FA00591761 /* LinearMovement.swift in Sources */,
+				640C10E62B42C5FA00591761 /* Seeker.swift in Sources */,
+				640C10F12B42C8B000591761 /* OpacityTransitioner.swift in Sources */,
+				649AD8042B628F690064C3A3 /* TalkingCharacter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640C10A62B42C5DF00591761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640C10B02B42C5DF00591761 /* YageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		640C10AD2B42C5DF00591761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 640C10A12B42C5DE00591761 /* Yage */;
+			targetProxy = 640C10AC2B42C5DF00591761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		640C10B22B42C5DF00591761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		640C10B32B42C5DF00591761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		640C10B52B42C5DF00591761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 993X4A8QP7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.Yage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		640C10B62B42C5DF00591761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 993X4A8QP7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.Yage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		640C10B82B42C5DF00591761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 993X4A8QP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.YageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		640C10B92B42C5DF00591761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 993X4A8QP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.YageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		640C109C2B42C5DE00591761 /* Build configuration list for PBXProject "Yage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640C10B22B42C5DF00591761 /* Debug */,
+				640C10B32B42C5DF00591761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		640C10B42B42C5DF00591761 /* Build configuration list for PBXNativeTarget "Yage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640C10B52B42C5DF00591761 /* Debug */,
+				640C10B62B42C5DF00591761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		640C10B72B42C5DF00591761 /* Build configuration list for PBXNativeTarget "YageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640C10B82B42C5DF00591761 /* Debug */,
+				640C10B92B42C5DF00591761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		640C10E82B42C63800591761 /* XCRemoteSwiftPackageReference "Schwifty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/curzel-it/Schwifty";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		640C10EB2B42C63E00591761 /* XCRemoteSwiftPackageReference "NotAGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/curzel-it/NotAGif";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		640C10E92B42C63800591761 /* Schwifty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 640C10E82B42C63800591761 /* XCRemoteSwiftPackageReference "Schwifty" */;
+			productName = Schwifty;
+		};
+		640C10EC2B42C63E00591761 /* NotAGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 640C10EB2B42C63E00591761 /* XCRemoteSwiftPackageReference "NotAGif" */;
+			productName = NotAGif;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 640C10992B42C5DE00591761 /* Project object */;
+}

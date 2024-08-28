@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "A1258FF0-27C8-44CE-A979-3C7C20AD615C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Funnybot.xcodeproj",
+        "identifier" : "647FDB592B31DCA500116C0A",
+        "name" : "FunnybotTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Funnyscript\/Funnyscript.xcodeproj",
+        "identifier" : "640C10472B41A39C00591761",
+        "name" : "FunnyscriptTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Yage\/Yage.xcodeproj",
+        "identifier" : "640C10A92B42C5DF00591761",
+        "name" : "YageTests"
+      }
+    }
+  ],
+  "version" : 1
+}

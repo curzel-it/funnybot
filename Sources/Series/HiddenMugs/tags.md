@@ -1,0 +1,17 @@
+hidden mugs,
+tech,
+tech news,
+news,
+weekly tech news
+ai,
+ai news,
+gaming,
+apple,
+openai,
+nvidia,
+google,
+elon musk,
+southpark,
+south park,
+family guy,
+linus tech tips
